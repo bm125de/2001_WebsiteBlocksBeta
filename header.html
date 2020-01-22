@@ -15,41 +15,28 @@
         <div class="text">
             <h1>We decided to make some changes</h1>
             <p>Sense will cause any miracle, as long as you are willing to work hard</p>
-            <a href="#">read more<i class="material-icons-sharp"> double_arrow </i></a>
+            <a href="#" class="buttom-1">read more<b class="buttom-1_b"></b><i class="material-icons-sharp"> double_arrow </i></a>
         </div>
-        <div class="background">
-            <i class="material-icons-sharp">commute</i>
+        <div class="background images">
+            <i class="material-icons-sharp d-none">commute</i>
         </div>
     </section>
     <!-- blockEnd -->
     <!-- blockStart -->
-        <section class="header header-2 d-none">
+        <section class="header header-2">
             <div class="background"></div>
-            <div class="text">
+            <div class="fullscreen-background d-none"></div>
+            <div class="text background-soild">
+            <!--If you want use background full effect, use .d-none for .background and than
+                change .text by side .background-[name] to background-blur -->
                 <div class="board">
                     <h1>Innovations of the Times, No One Can Arrive</h1>
                     <p>Give you the best quality of life</p>
                     <a href="#" class="buttom-2">Read more<i class="material-icons-sharp buttom-2_i"> double_arrow </i></a>    
                 </div>
             </div>
-            <div class="fullscreen-background"></div>
         </section>
-        <script>
-            $('.buttom-2').mouseover(
-                function header2_text_board_a_i_hover() {
-                    $('.buttom-2_i').css('margin-left','5px');
-                    $('.buttom-2').css('padding-left','20px');
-                    $('.buttom-2').css('text-decoration','black solid 2px !important');
-                    $('.buttom-2_i').css('opacity','100');
-                }
-            ).mouseout(
-                function header2_text_board_a_i_unhover() {
-                    $('.buttom-2_i').css('margin-left','0px');
-                    $('.buttom-2').css('padding-left','0');
-                    $('.buttom-2').css('text-decoration','black solid 0px !important');
-                    $('.buttom-2_i').css('opacity','0');
-                });
-        </script>
     <!-- blockEnd -->
+    <script src="script.js"></script>
 </body>
 </html>

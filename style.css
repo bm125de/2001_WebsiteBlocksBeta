@@ -1,5 +1,5 @@
 /* font */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,200,300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
 * {
     font-family: 'Noto Sans TC', sans-serif;
@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     height: 1000vh;
+    background-color: wheat;
 }
 h1,p {
     margin: 0;
@@ -35,7 +36,6 @@ text-decoration: none;
     height: 400px;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
-    font-weight: bolder;
     margin: auto auto;
     top: auto;
     bottom: 20vh;
@@ -51,18 +51,8 @@ text-decoration: none;
     font-size: 25px;
 }
 .header-1 .text a {
-    display: block;
-    padding: 10px;
-    width: 140px;
-    border: rgba(255, 255, 255, 1) 1px solid;
-    margin-top: 5vh;
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 1);
-}
-.header-1 .text a:hover {
-    transition: .5s;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(0,0,0,1);
+    margin-top: 5vh;
 }
 .header-1 .text a i {
     display: inline-flex;
@@ -84,7 +74,6 @@ text-decoration: none;
     background-position: center;
 }
 .header-1 .background i {
-    display: none;
     cursor: default;
     color: rgba(255, 255, 255, 0.25);
     font-size: 150vh;
@@ -131,18 +120,24 @@ text-decoration: none;
 }
 /* header block 2 */
 .header-2 {
-    background-color: blue;
+    position: relative;
+    overflow: hidden;
 }
 .header-2 .text {
-    backdrop-filter: blur(10px);
     box-sizing: border-box;
     text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 1);
     width: 50%;
     height: 100%;
     display: flex;
     padding: 0 5%;
     align-items: center;
+}
+.header-2 .background-soild {
+    background-color: rgba(255, 255, 255, 1);
+}
+.header-2 .background-blur {
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(10px);
 }
 .header-2 .text .board {
 }
@@ -150,7 +145,7 @@ text-decoration: none;
     font-size: 75px;
     line-height: 80px;
     letter-spacing: 5px;
-    font-weight: 900;
+    font-weight: 800;
 }
 .header-2 .text p {
     margin: 25px 0;
@@ -159,26 +154,90 @@ text-decoration: none;
     width: auto;
 }
 .header-2 .text a {
-    margin-top: 50px;
     font-size: 32px;
     font-weight: 900;
 
 }
 .header-2 .background {
-    background-image: url(header-2.jpg);
+    background-image: url(https://images.unsplash.com/photo-1579545010736-c452bfb92166?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80);
     background-size: cover;
     background-position: center;
-    background-color: saddlebrown;
     height: 100%;
     width: 50%;
     top: 0;
     right: 0;
     position: absolute;
 }
+.header-2 .fullscreen-background {
+    background-image: url(https://images.unsplash.com/photo-1579545010736-c452bfb92166?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+@media screen and (min-width:1351px) {
+    .header-2 .text a {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:1350px) {
+    .header-2 .text {
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        height: 60%;
+        width: 100%;
+    }
+    .header-2 .background {
+        height: 40% !important;
+        width: 100% !important;
+    }
+    .header-2 .text h1 {
+        font-size: 50px;
+        line-height: 100%;
+    }
+    .header-1 .text a {
+        margin-top: 0px !important;
+    }
+}
+@media screen and (max-width:530px) {
+    .header-2 .text h1 {
+        font-size: 35px;
+        line-height: 100%;
+    }
+    .header-2 .text p {
+        font-size: 15px;
+        line-height: 100%;
+    }
+}
 /* element */
 .d-none {
     display: none;
 }
+.bga-f {
+    background-attachment: fixed;
+}
+.buttom-1 {
+    position: relative;
+    transition: .5s;
+    display: block;
+    padding: 10px;
+    width: 150px;
+    border: rgba(255, 255, 255, 1) 1px solid;
+    color: rgba(255, 255, 255, 1);
+}
+.buttom-1_b {
+    transition: .35s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: white solid 0px;
+}
+
 .buttom-2 {
     background-color: transparent;
     transition: .35s;
@@ -186,7 +245,7 @@ text-decoration: none;
     width: 250px;
     display: block;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 .buttom-2:hover {
     color: rgba(255, 255, 255, 1);
