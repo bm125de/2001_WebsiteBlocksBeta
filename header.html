@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Header</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- blockStart -->
+    <section class="header header-1">
+        <div class="filter"></div>
+        <div class="text">
+            <h1>We decided to make some changes</h1>
+            <p>Sense will cause any miracle, as long as you are willing to work hard</p>
+            <a href="#">read more<i class="material-icons-sharp"> double_arrow </i></a>
+        </div>
+        <div class="background">
+            <i class="material-icons-sharp">commute</i>
+        </div>
+    </section>
+    <!-- blockEnd -->
+    <!-- blockStart -->
+        <section class="header header-2 d-none">
+            <div class="background"></div>
+            <div class="text">
+                <div class="board">
+                    <h1>Innovations of the Times, No One Can Arrive</h1>
+                    <p>Give you the best quality of life</p>
+                    <a href="#" class="buttom-2">Read more<i class="material-icons-sharp buttom-2_i"> double_arrow </i></a>    
+                </div>
+            </div>
+            <div class="fullscreen-background"></div>
+        </section>
+        <script>
+            $('.buttom-2').mouseover(
+                function header2_text_board_a_i_hover() {
+                    $('.buttom-2_i').css('margin-left','5px');
+                    $('.buttom-2').css('padding-left','20px');
+                    $('.buttom-2').css('text-decoration','black solid 2px !important');
+                    $('.buttom-2_i').css('opacity','100');
+                }
+            ).mouseout(
+                function header2_text_board_a_i_unhover() {
+                    $('.buttom-2_i').css('margin-left','0px');
+                    $('.buttom-2').css('padding-left','0');
+                    $('.buttom-2').css('text-decoration','black solid 0px !important');
+                    $('.buttom-2_i').css('opacity','0');
+                });
+        </script>
+    <!-- blockEnd -->
+</body>
+</html>
