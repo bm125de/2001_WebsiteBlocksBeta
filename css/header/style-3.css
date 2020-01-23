@@ -1,0 +1,65 @@
+.header-3 {
+    position: relative;
+    background-color: black;
+    min-height: 720px;
+    background-image: url(https://images.unsplash.com/photo-1579736560054-b4d1228b2f0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2155&q=80);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.header-3.scroll {
+    background-color: transparent !important;
+    background-image: none !important;
+    background-position: none !important;
+    background-size: none !important;
+    overflow: hidden;
+}
+.header-3 .filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+.header-3 .text {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    /* background-color: aqua; */
+    height: 50%;
+    width: 70%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-3 .text h1 {
+    font-size: 60px;
+}
+.header-3 .text .link {
+    align-self: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10%;
+}
+.header-3 .text .link .buttom-3:nth-child(2) {
+    margin-left: 100px;
+}
+@media screen and (max-width:700px) {
+    .header-3 .text .link {
+        flex-direction: column;
+    }
+    .header-3 .text .link .buttom-3:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .header-3 .text h1 {
+        font-size: 8vw;
+    }
+}

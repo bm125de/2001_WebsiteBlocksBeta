@@ -7,14 +7,15 @@
     <title>Header</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
 </head>
 <body>
     <!-- blockStart -->
     <section class="header header-1">
         <div class="filter"></div>
         <div class="text">
-            <h1>We decided to make some changes</h1>
-            <p>Sense will cause any miracle, as long as you are willing to work hard</p>
+            <h1>Praesent iaculis ante velit, sit.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <a href="#" class="buttom-1">read more<b class="buttom-1_b"></b><i class="material-icons-sharp"> double_arrow </i></a>
         </div>
         <div class="background images">
@@ -26,9 +27,8 @@
         <section class="header header-2">
             <div class="background"></div>
             <div class="fullscreen-background d-none"></div>
+            <!-- <div class="text background-blur"> -->
             <div class="text background-soild">
-            <!--If you want use background full effect, use .d-none for .background and than
-                change .text by side .background-[name] to background-blur -->
                 <div class="board">
                     <h1>Innovations of the Times, No One Can Arrive</h1>
                     <p>Give you the best quality of life</p>
@@ -36,6 +36,20 @@
                 </div>
             </div>
         </section>
+    <!-- blockEnd -->
+    <!-- blockStart -->
+    <!-- You have scroll parallax version background images right here -->
+    <section class="header header-3 scroll" data-parallax="scroll" data-image-src="https://images.unsplash.com/photo-1579736560054-b4d1228b2f0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2155&q=80">
+    <!-- <section class="header header-3"> -->
+        <div class="filter"></div>
+        <div class="text">
+            <h1>Lorem ipsum, dolor sit amet consectetur.</h1>
+            <div class="link">
+                <a href="" class="buttom-3 outlined">watch</a>
+                <a href="" class="buttom-3 soild">read more</a>
+            </div>
+        </div>
+    </section>
     <!-- blockEnd -->
     <script src="script.js"></script>
 </body>

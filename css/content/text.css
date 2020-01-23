@@ -1,0 +1,57 @@
+.content-text {
+    position: relative;
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+.content-text .box {
+    width: 60%;
+}
+.content-text .box h1 {
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 80px;
+    font-style: italic;
+    /* text-align: justify;
+    text-justify: inter-word; */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: ease-in-out .2s;
+    cursor: default;
+}
+.content-text .box h1:hover {
+    line-height: 90px;
+}
+.content-text .box i {
+    color: rgba(255, 255, 255, .3);
+    font-size: 70vh;
+    position: absolute;
+    cursor: default;
+}
+.content-text .box i.icon-right {
+    top: 0;
+    right: 0;
+}
+.content-text .box i.icon-left {
+    top: 0;
+    left: 0;
+}
+@media screen and (max-width:900px) {
+    .content-text .box {
+        width: 90%;
+    }
+    .content-text .box h1 {
+        font-size: 40px !important;
+        line-height: 50px !important;
+    }
+}
+@media screen and (max-width:350px) {
+    .content-text .box h1 {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+}
