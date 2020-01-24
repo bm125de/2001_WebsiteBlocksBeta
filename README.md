@@ -1,4 +1,4 @@
-# Block-Beta
+# B
 
 [Header](header.html)
 
