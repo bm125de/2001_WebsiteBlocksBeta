@@ -89,5 +89,7 @@
 @media screen and (max-height:500px) {
     .content-images-1 .box {
         bottom: 0;
+        top: 0;
+        margin: 0 auto;
     }
 }
