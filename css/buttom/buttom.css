@@ -1,0 +1,77 @@
+.buttom-1 {
+    position: relative;
+    transition: .5s;
+    display: block;
+    padding: 10px;
+    /* width: 150px; */
+    width: 150px;
+    border: rgba(255, 255, 255, 1) 1px solid;
+    color: rgba(255, 255, 255, 1);
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.buttom-1_b {
+    transition: .35s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: white solid 0px;
+}
+
+.buttom-2 {
+    background-color: transparent;
+    transition: .35s;
+    color: black;
+    width: 250px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttom-2:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: black;
+    transition: .35s;   
+}
+.buttom-2 i {
+    color: rgba(255, 255, 255, 1);
+    font-size: 35px;
+    display: inline-flex;
+    vertical-align: middle;
+    opacity: 0;
+    transition: .35s;
+}
+.buttom-3 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    padding: 12px 30px;
+    border-radius: 300px;
+    transition: .25s ease-in-out;
+}
+.buttom-3.soild {
+    color: black;
+    background-color: white;
+    border: transparent 2px solid;
+}
+.buttom-3.outlined {
+    color: white ;
+    border: white 2px solid;
+    background-color: transparent;
+}
+.buttom-3.outlined:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: transparent 2px solid;
+}
+.buttom-3.soild:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(226, 178, 21);
+}
