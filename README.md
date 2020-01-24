@@ -1,4 +1,4 @@
-# beta.bm125.de
+# Block-Beta
 
 [Header](header.html)
 
