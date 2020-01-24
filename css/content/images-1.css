@@ -1,7 +1,7 @@
 .content-images-1 {
     /* background-color: coral; */
     height: 100vh;
-    min-height: 720px
+    min-height: 720px;
     position: relative;
     overflow: hidden;
 }
