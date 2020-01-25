@@ -1,6 +1,7 @@
 .content-text {
     position: relative;
     height: 60vh;
+    min-height: 500px;
     background-color: black;
     display: flex;
     align-items: center;
