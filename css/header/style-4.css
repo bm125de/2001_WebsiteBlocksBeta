@@ -58,6 +58,16 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
     min-width: 1920px;
     height: 120%;
 }
+@media screen and (max-height:720px) {
+    .header-4 iframe {
+        height: 200%;
+    }
+}
+@media screen and (max-height:500px) {
+    .header-4 iframe {
+        height: 500%;
+    }
+}
 @media screen and (max-width:1024px) {
     .header-4 iframe {
         display: none;
