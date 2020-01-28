@@ -4,6 +4,9 @@
     overflow: hidden;
     min-height: 800px;
 }
+.content-images-2 > * {
+    cursor: default;
+}
 .content-images-2.bg {
     background-image: url(../../1910.jpg);
     background-position: center center;
