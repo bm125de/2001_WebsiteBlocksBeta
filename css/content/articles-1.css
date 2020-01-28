@@ -1,0 +1,102 @@
+.content-articles-1 {
+    padding: 40px 50px;
+    min-height: 720px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+.content-articles-1 .flex-box {
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    transition: 1s;
+    box-sizing: border-box;
+}
+.content-articles-1 .title {
+    font-size: 45px;
+    margin: 40px 5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.content-articles-1 .flex-box .art {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: .4s;
+    margin: 10px 1%;
+    border: black 2px solid;
+    height: 500px;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+.content-articles-1 .flex-box .art:hover {
+    background-color: rgba(0, 0, 0, 0.0);
+    box-shadow: rgba(0, 0, 0, 0.9) 15px 15px;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+.content-articles-1 .flex-box .art .img {
+    border-bottom: solid black 2px;
+    height: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-articles-1 .flex-box .art .img img {
+    transition: .25s ease-out;
+    width: 100%;
+    min-width: 500px;
+    height: auto;
+    justify-content: center;
+}
+.content-articles-1 .flex-box .art .text {
+    padding: 5%;
+}
+.content-articles-1 .flex-box .art .text h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 900;
+    margin-bottom: 3%;
+}
+.content-articles-1 .flex-box .art .text p {
+    font-size: 20px;
+}
+.content-articles-1 .flex-box .art .text a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    margin: 20px 0;
+    text-decoration: transparent;
+    border-bottom: 10px solid transparent;
+    transition: .35s ease-in-out;
+    font-weight: 900;
+}
+.content-articles-1 .flex-box .art .text a:hover {
+    border-bottom: 4px solid black;
+}
+.content-articles-1 .flex-box .art .text a .material-icons-sharp {
+    vertical-align: middle;
+}
+@media screen and (max-width:500px) {
+    .content-articles-1 .flex-box .art {
+        padding: 0;
+    }
+    .content-articles-1 {
+        padding: 0 5px;
+    }
+    .content-articles-1 .title {
+        margin: 0 10%;
+    }
+    .content-articles-1 .flex-box .art .text h1 {
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+    .content-articles-1 .flex-box .art .text a {
+        margin: 2px 0;
+    }
+}

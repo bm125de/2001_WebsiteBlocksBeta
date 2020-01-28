@@ -79,4 +79,10 @@
         min-width: 100%;
         padding: 0 10vw;
     }
+    .content-images-2 .text .title i {
+        opacity: .4;
+        margin-top: -40px;
+        margin-left: -5px;
+        font-size: 150px;
+    }
 }
