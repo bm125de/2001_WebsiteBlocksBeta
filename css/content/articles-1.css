@@ -36,6 +36,7 @@
     margin-bottom: 25px;
 }
 .content-articles-1 .flex-box .art .img {
+    cursor: pointer;
     border-bottom: solid black 2px;
     height: 50%;
     overflow: hidden;
@@ -54,6 +55,9 @@
 .content-articles-1 .flex-box .art .text {
     padding: 5%;
 }
+.content-articles-1 .flex-box .art .text > * {
+    cursor: default;
+}
 .content-articles-1 .flex-box .art .text h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -66,6 +70,7 @@
     font-size: 20px;
 }
 .content-articles-1 .flex-box .art .text a {
+    cursor: pointer;
     display: inline-block;
     text-transform: uppercase;
     color: black;
