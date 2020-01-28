@@ -10,6 +10,19 @@
     <script src="js/parallax.min.js"></script>
 </head>
 <body>
+    <nav class="nav-1">
+        <h1>Block</h1>
+        <button type="button" onclick="openMenu_1()" class="material-icons-sharp">menu_open</button>
+        <div class="item">
+            <div class="mobile">
+                <h1>選單</h1>
+            </div>
+            <a href="">Header</a>
+            <a href="">Text, Images</a>
+            <a href="">Nav</a>
+        </div>
+        <div class="after" onclick="closeMenu_1()"></div>
+    </nav>
     <section class="header header-4">
         <iframe src="https://www.youtube.com/embed/LqDMVbNp4nw?mute=1&autoplay=1&loop=1&playlist=xIl2z5wwjdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="filter"></div>
@@ -18,56 +31,54 @@
             <a href="#read">了解更多</a> <a href="#more">捲動...</a>
         </div>
     </section>
-    <main>
-        <section class="content-text" id="more">
-            <div class="box" >
-                <i class="material-icons-sharp icon-right"> question_answer </i>
-                <h1>讓網頁設計更簡單，這麼做是為了讓更多人接觸網頁設計。</h1>
-            </div>
-        </section>
-        <section class="content-images-1"  data-parallax="scroll" data-image-src="https://images.unsplash.com/photo-1551677629-c3e314ecf29c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-            <div class="box" >
-                <h1>連小學生都會的操作！</h1>
-                <div class="line"></div>
-                <p>其實，你不需要覺得網頁設計很難。其實網頁設計連小學生都學得會，更何況是你呢？只要看得懂英文(或者翻譯)相信你一定學得會網頁，就先從我們的服務開始。</p>
-            </div>
-        </section>
-        <section class="content-articles-1" id="read">
-            <h1 class="title">了解更多</h1>
-            <div class="flex-box">
-                <div class="art">
-                    <div class="img">
-                        <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    </div>
-                    <div class="text">
-                        <h1>我們是如何將網站模組化的？</h1>
-                        <p>我們利用了一系列的模組系挺來模組化網頁模板，讓任何人都能輕鬆利用我們的服務架設網站，而且CSS並不會造成讀取延遲！</p>
-                        <a href="">立即試用<i class="material-icons-sharp"> double_arrow </i></a>
-                    </div>
+    <section class="content-text main" id="more">
+        <div class="box" >
+            <i class="material-icons-sharp icon-right"> question_answer </i>
+            <h1>讓網頁設計更簡單，這麼做是為了讓更多人接觸網頁設計。</h1>
+        </div>
+    </section>
+    <section class="content-images-1"  data-parallax="scroll" data-image-src="https://images.unsplash.com/photo-1551677629-c3e314ecf29c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+        <div class="box" >
+            <h1>連小學生都會的操作！</h1>
+            <div class="line"></div>
+            <p>其實，你不需要覺得網頁設計很難。其實網頁設計連小學生都學得會，更何況是你呢？只要看得懂英文(或者翻譯)相信你一定學得會網頁，就先從我們的服務開始。</p>
+        </div>
+    </section>
+    <section class="content-articles-1" id="read">
+        <h1 class="title">了解更多</h1>
+        <div class="flex-box">
+            <div class="art">
+                <div class="img">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
                 </div>
-                <div class="art">
-                    <div class="img">
-                        <img src="https://images.unsplash.com/photo-1549056630-ee2626bb5ad5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="">
-                    </div>
-                    <div class="text">
-                        <h1>查看我們的範例網頁！</h1>
-                        <p>一堆用我們的模板製作出來的網頁，快來看看使用我們的模板做出的網頁會長什麼樣子！！</p>
-                        <a href="">了解更多<i class="material-icons-sharp"> double_arrow </i></a>
-                    </div>
-                </div>
-                <div class="art">
-                    <div class="img">
-                        <img src="https://images.unsplash.com/photo-1571156425562-12341e7c9aae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    </div>
-                    <div class="text">
-                        <h1>Lorem ipsum dolor sit amet.</h1>
-                        <p>consectetur adipisicing elit. Accusamus vitae ea rerum animi beatae suscipit.</p>
-                        <a href="">read more<i class="material-icons-sharp"> double_arrow </i></a>
-                    </div>
+                <div class="text">
+                    <h1>我們是如何將網站模組化的？</h1>
+                    <p>我們利用了一系列的模組系挺來模組化網頁模板，讓任何人都能輕鬆利用我們的服務架設網站，而且CSS並不會造成讀取延遲！</p>
+                    <a href="">立即試用<i class="material-icons-sharp"> double_arrow </i></a>
                 </div>
             </div>
-        </section>    
-    </main>
+            <div class="art">
+                <div class="img">
+                    <img src="https://images.unsplash.com/photo-1549056630-ee2626bb5ad5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="">
+                </div>
+                <div class="text">
+                    <h1>查看我們的範例網頁！</h1>
+                    <p>一堆用我們的模板製作出來的網頁，快來看看使用我們的模板做出的網頁會長什麼樣子！！</p>
+                    <a href="">了解更多<i class="material-icons-sharp"> double_arrow </i></a>
+                </div>
+            </div>
+            <div class="art">
+                <div class="img">
+                    <img src="https://images.unsplash.com/photo-1571156425562-12341e7c9aae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                </div>
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>consectetur adipisicing elit. Accusamus vitae ea rerum animi beatae suscipit.</p>
+                    <a href="">read more<i class="material-icons-sharp"> double_arrow </i></a>
+                </div>
+            </div>
+        </div>
+    </section>    
     <script src="script.js"></script>
 </body>
 </html>

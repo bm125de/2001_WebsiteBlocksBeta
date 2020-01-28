@@ -1,3 +1,7 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
 $('.buttom-1').mouseenter(function (e) {
         const buttom = e.currentTarget;
         $(buttom).css('background-color', 'rgba(255, 255, 255, 1)').css('color', 'rgba(0,0,0,1)');
@@ -21,3 +25,30 @@ $('.buttom-2').mouseover(function (e) {
     $(dom).find("i").css('margin-left', '0px').css('opacity', '0');
     $(dom).css('padding-left', '0').css('text-decoration', 'black solid 0px !important');
 });
+
+$(window).scroll(async function() {
+    var hT = $('.main').offset().top,
+        hH = $('.main').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+        // console.log((hT-wH) , wS);
+    if (wS > (hT+hH-wH) -200 ){
+        // await sleep(1000);
+        $('.nav-1').css('background-color','rgb(0,0,0)');
+    }else {
+        $('.nav-1').css('background-color','transparent');
+    }
+    });
+
+    async function openMenu_1() {
+    $('.nav-1 .item').css('right','0');
+    $('.nav-1 .after').css('display','block');
+    await sleep(10);
+    $('.nav-1 .after').css('opacity','.5');
+}
+    async function closeMenu_1() {
+    $('.nav-1 .after').css('opacity','.0');
+    await sleep(100);
+    $('.nav-1 .after').css('display','none');
+    $('.nav-1 .item').css('right','-50%');
+}

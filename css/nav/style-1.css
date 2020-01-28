@@ -1,0 +1,100 @@
+/* nav */
+main {
+    /* background-color: tomato;
+    margin-top: 2000px;
+    height: 10px; */
+}
+/* nav style 1 */
+.nav-1 {
+    font-weight: 900;
+    display: flex;
+    color: white;
+    height: 80px;
+    background-color: transparent;
+    text-transform: uppercase;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: ease-in-out .3s;
+    z-index: 9999999;
+}
+.nav-1 h1 {
+    margin-left: 20px;
+}
+.nav-1 .mobile h1 {
+    font-size: 40px;
+    margin: 0;
+}
+.nav-1 button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    display: none;
+    margin-right: 30px;
+}
+.nav-1 .item a {
+    color: white;
+    text-decoration: transparent;
+}
+@media screen and (min-width:1024px) {
+    .nav-1 .item {
+        margin-right: 20px;
+        margin-left: auto;
+    }
+    .nav-1 .item a {
+        margin: 0 20px;
+    }
+    .nav-1 .item .mobile {
+        display: none;
+    }
+}
+@media screen and (max-width:1023px) {
+    .nav-1 button {
+        display: block;
+    }
+    .nav-1 .after {
+        display: none;
+        opacity: .0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: black;
+        transition: .5s;
+    }
+    .nav-1 .item {
+        box-sizing: border-box;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        transition: .6s ease-in-out;
+        position: fixed;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        min-width: 200px;
+        background-color: black;
+        height: 100%;
+    }
+    .nav-1 .item .mobile {
+        border-bottom: 2px solid white;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .nav-1 .item .mobile h1 {
+        margin: 20px 0;
+    }
+    .nav-1 .item a {
+        font-size: 30px;
+        font-style: italic;
+    }
+}
