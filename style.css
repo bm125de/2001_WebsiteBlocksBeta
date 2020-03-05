@@ -1,27 +1,35 @@
 /* font */
+
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,200,300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
 @import url('css/header/header.css');
 @import url('css/buttom/buttom.css');
 @import url('css/content/content.css');
 @import url('css/nav/nav.css');
+
 /* initialization */
+
 * {
     font-family: 'Noto Sans TC', sans-serif;
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
-    height: 1000vh;
+    /* height: 1000vh; */
     background-color: rgb(25, 0, 255);
 }
-h1,p {
+
+h1,
+p {
     margin: 0;
 }
+
 .d-none {
     display: none;
 }
+
 .bga-f {
     background-attachment: fixed;
 }
